@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import sys
+sys.path.append("..")	#Add parent directoy to Include Paths
 
 from HL1606_RPi_GPIO import HL1606
 

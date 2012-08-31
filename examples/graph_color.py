@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import RPi.GPIO as GPIO
+sys.path.append("..")	#Add parent directoy to Include Paths
+
+
 from time import sleep
 from array import *
 from HL1606_RPi_GPIO import HL1606
