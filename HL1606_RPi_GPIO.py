@@ -128,10 +128,9 @@ class HL1606:
 					
 		self.send(bytes)		
 		
-	def colorgraph(self, value, color=0b01110001, offset=12, offsetcolor=0b10000001):
+	def colorgraph(self, value, color=0b01110001, offset=8, offsetcolor=0b10000001):
 
 		value = int((value/100)*LED_Count)		#Adjust the value according to the No. of LED's on the strip
-		print (value)
 		for j in range(LED_Count): 
 		
 			bytes = array('i',[])
