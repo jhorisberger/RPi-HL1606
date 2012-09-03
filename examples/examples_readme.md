@@ -10,8 +10,10 @@ HL1606 Examples
 
 Or change the Pin numbers in HL1606_RPi_GPIO.py on line 10 and following. Also change the number of pixels your stripe has on line 16.
 
-**You need to supply Levelshifting for the signals !!!** The easiest way th achve this is with a quadruple dual-input and gate (74HC08 or similar) 
-!(Levelshifter.jpeg)
+**You need to supply Levelshifting for the signals as the HL1606 doesent accept 3.3V as High !!!** The easiest way th achve this is with a quadruple dual-input and gate (74HC08 or similar)   
+![Levelshifter example with a SN74HC08](https://github.com/jhorisberger/RPi-HL1606/blob/master/examples/Levelshifter.jpg)
+ 
+ The pull-up resistor in the LI line keeps the strip from displaying colorfull but unwanted random colorbits when the stripe is not activly driven.
  
 Description 
 ------------
@@ -24,7 +26,7 @@ Displays a Bargraph according to the values (in %) given to the function. In adi
 Example to display 30% and 70% in standard colors:  
 `sudo python3 graph.py 30 70`  
   
-Example to display 30% and 70% in defined colors: (Greeen and white)
+Example to display 30% and 70% in defined colors: (Greeen and white)  
 `sudo python3 graph_color.py 30 70 10000001 10101001 00000001`  
 
   
