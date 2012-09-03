@@ -10,6 +10,8 @@ HL1606 Examples
 
 Or change the Pin numbers in HL1606_RPi_GPIO.py on line 10 and following. Also change the number of pixels your stripe has on line 16.
 
+**You need to supply Levelshifting for the signals !!!** The easiest way th achve this is with a quadruple dual-input and gate (74HC08 or similar) 
+!(Levelshifter.jpeg)
  
 Description 
 ------------

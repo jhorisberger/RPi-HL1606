@@ -3,6 +3,8 @@ RPi-HL1606
 
 A controlling script for HL1606 type LED stripes with the Raspberry Pi 
 
+**You need to supply Levelshifting for the signals as the HL1606 doesen't accept 3.3V as High !!!**  
+
 **Relies on the RPi-GPIO library!**
 
 
